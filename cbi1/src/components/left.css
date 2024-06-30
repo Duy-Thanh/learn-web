@@ -1,0 +1,17 @@
+.left{
+    padding-left: 5px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(60, 52, 39);
+    color: aliceblue;
+}
+.ull{
+    list-style-type: none;
+}
+.ull li{
+    padding: 5px;
+}
+#active{
+    background-color: rgb(113, 143, 168);
+    margin-right: 20px;
+}

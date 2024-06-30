@@ -1,0 +1,56 @@
+.topbar {
+    width: 100%;
+}
+
+.title {
+    margin-left: -3.25vw;
+    margin-top: 1%;
+}
+
+.common_button {
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 40px;
+    border-radius: 15px;
+    background-color: #713FFF;
+    color: white;
+    margin-top: 4.85%;
+    margin-left: 4.2%;
+}
+
+/* Modal styles */
+.modal .modal-dialog {
+	max-width: 400px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+	padding: 20px 30px;
+}
+.modal .modal-content {
+	border-radius: 3px;
+	font-size: 14px;
+}
+.modal .modal-footer {
+	background: #ecf0f1;
+	border-radius: 0 0 3px 3px;
+}
+.modal .modal-title {
+	display: inline-block;
+}
+.modal .form-control {
+	border-radius: 2px;
+	box-shadow: none;
+	border-color: #dddddd;
+}
+.modal textarea.form-control {
+	resize: vertical;
+}
+.modal .btn {
+	border-radius: 2px;
+	min-width: 100px;
+}	
+.modal form label {
+	font-weight: normal;
+}

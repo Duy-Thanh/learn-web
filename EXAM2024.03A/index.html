@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link react -->
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="babel.min.js"></script>
+
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min1.css"> -->
+
+    <!-- link css ca nhan -->
+    <link rel="stylesheet" href="style.css">
+    <title>Final Test</title>
+</head>
+
+<body>
+    <!-- <i class="glyphicon glyphicon-trashcan"></i> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TLU</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quản Lý Nhân Viên</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Nhập nội dung"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container" style="background-color: rgb(67, 93, 125); height: 60px;">
+            <a class="navbar-brand">Quản Lý Nhân Viên</a>
+            <form class="d-flex" role="search">
+                <button class="button1" type="submit">Xóa</button>
+                <button class="button2" type="submit"><a href="form.html">Thêm mới</a></button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"><input type="checkbox" name="" id=""></th>
+                    <th scope="col">Mã khóa học</th>
+                    <th scope="col">Tên khóa học</th>
+                    <th scope="col">Ngày bắt đầu</th>
+                    <th scope="col">Ngày kết thúc</th>
+                    <th scope="col">Hành động</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>CCNA</td>
+                    <td>Khóa học Triển khai và Quản trị giải pháp Ciso</td>
+                    <td>31/03/2004</td>
+                    <td>31/06/2004</td>
+                    <td>
+                       <i> &#126868</i>
+                       <i> &#126868</i>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>CCNP</td>
+                    <td>Khóa học quản trị mạng Ciso</td>
+                    <td>02/04/2004</td>
+                    <td>05/07/2004</td>
+                    <td>
+                        <i> &#126868</i>
+                       <i> &#126868</i>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>MCSA</td>
+                    <td>QUẢN TRỊ HỆ THỐNG MCSA-AZURE</td>
+                    <td>04/04/2004</td>
+                    <td>05/07/2004</td>
+                    <td>
+                        <i> &#126868</i>
+                       <i> &#126868</i>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>MCSE</td>
+                    <td>CHUYÊN GIA QUẢN TRỊ HỆ THỐNG MCSE</td>
+                    <td>06/07/2004</td>
+                    <td>07/09/2004</td>
+                    <td>
+                        <i> &#126868</i>
+                       <i> &#126868</i>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <div class="hint-text">Hiển Thị <b>4</b> / <b>25</b> bản Ghi</div>
+        <div class="right">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link">Trước</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Sau</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- link js cua boostrap -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

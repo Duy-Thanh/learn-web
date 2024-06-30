@@ -1,0 +1,49 @@
+#wrapper{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    border: 3px solid black;
+    width: 230px;
+}
+#header{
+    display: flex;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    padding-left: 15px;
+}
+#content{
+    padding-left: 20px;
+    padding-right: 35px;
+}
+#content h4{
+    margin-bottom: 5px;
+}
+#content input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+#leg{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    background-color: grey;
+
+}
+#leg button{
+    margin-right: 10px;
+} 
+.button1{
+    background-color: white;
+}
+.button2{
+    background-color: rgb(119, 115, 245);
+    width: 500px;
+}
+.close{
+    padding-left: 50px;
+}
+.close a{
+    text-decoration: none;
+}

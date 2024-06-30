@@ -1,0 +1,14 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Phong 01",
+      "amount": "20"
+    },
+    {
+      "id": "6",
+      "name": "Phong 010",
+      "amount": "21"
+    }
+  ]
+}

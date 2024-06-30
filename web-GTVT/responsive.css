@@ -1,0 +1,31 @@
+@media(max-width: 1700px) {
+    .body-right-box-child {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .body-right-box {
+        display: block;
+        background-color: #b3b3b3;
+        width: calc(100% - 1100px);
+        height: 1000px;
+        position: absolute;
+        top: 241px;
+        bottom: 0;
+        left: 1100px;
+        right: 0;
+    }
+
+    .body-text {
+        display: block;
+        height: 250px;
+        padding: 15px 20px;
+        margin: 30px auto;
+        font-size: 14px;
+        background-color: #5555f8;
+        color: white;
+    }
+        
+    
+}

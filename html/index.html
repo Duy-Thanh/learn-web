@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold mb-4">Add Student</h2>
+    <form id="addStudent" class="mb-8">
+        <div class="mb-4">
+            <label for="fullName" class="block text-gray-700 text-sm font-bold mb-2">Full Name: </label>
+            <input type="text" id="fullName" class="bg-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="mb-4">
+            <label for="studentCode" class="block text-gray-700 text-sm font-bold mb-2">Student Code: </label>
+            <input type="text" id="studentCode" class="bg-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="mb-4">
+            <label for="dob" class="block text-gray-700 text-sm font-bold mb-2">Date of Birth: </label>
+            <input type="date" id="dob" class="bg-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="mb-4">
+            <label for="studentClass" class="block text-gray-700 text-sm font-bold mb-2">Class: </label>
+            <input type="text" id="studentClass" class="bg-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Add Student</button>
+        </div>
+    </form>
+
+    <h2 class="text-2xl font-bold mb-4">
+        Students list
+    </h2>
+
+    <table id="studentTable" class="table-output w-full">
+        <thead>
+            <tr>
+                <th class="px-4 py-2">Full Name</th>
+                <th class="px-4 py-2">Student Code</th>
+                <th class="px-4 py-2">Date of Birth</th>
+                <th class="px-4 py-2">Class</th>
+                <th class="px-4 py-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        var fullName = document.getElementById("fullName");
+        var studentCode = document.getElementById("studentCode");
+        var dob = document.getElementById("dob");
+        var studentClass = document.getElementById("studentClass");
+
+        async function getRequest(endpoint) {
+            try {
+                let url_request = `http://127.0.0.1:5500/${endpoint}`;
+
+                const response = await fetch(url_request);
+
+                if (!response || !response.ok) {
+                    throw new Error("Network is corrupted");
+                }
+
+                return await response.json();
+            } catch {
+                console.error("Cannot fetch file /" + endpoint);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var html_inserted = 
+                    '<thead><tr><th class=\"px-4 py-2\">Full Name</th><th class=\"px-4 py-2\">Student Code</th><th class=\"px-4 py-2\">Date of Birth</th><th class=\"px-4 py-2\">Class</th><th class=\"px-4 py-2\">Actions</th></tr></thead><tbody>';
+
+            getRequest("data.json").then(responseData => {
+                responseData.forEach(classData => {
+                    classData.student.forEach(studentData => {
+                        console.log(`Full name: ${studentData.fullName}`);
+
+                        html_inserted += `<tr><td>${studentData.fullName}</td><td>${studentData.studentCode}</td><td>${studentData.dob}</td><td>${classData.className}</td><tr>`;
+                    });
+                });
+
+                html_inserted += '</tbody>';
+
+                document.getElementById("studentTable").innerHTML = html_inserted;
+                console.log(responseData);
+            });
+    });
+
+        document.getElementById("addStudent").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            if (fullName.value == "" ||
+                studentCode.value == "" ||
+                dob.value == "" ||
+                studentClass.value == ""
+            ) {
+                alert("Please fill all fields and then try again");
+                return;
+            } else {
+                console.log(`full name: ${fullName.value}`);
+                console.log(`student code: ${studentCode.value}`);
+                console.log(`dob: ${dob.value}`);
+                console.log(`class: ${studentClass.value}`);
+            }
+        });
+    </script>
+</body>
+</html>

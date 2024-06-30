@@ -1,0 +1,28 @@
+{
+  "lists": [
+    {
+      "name": "Test1",
+      "priority": 0,
+      "status": "todo",
+      "id": "22b6"
+    },
+    {
+      "name": "a",
+      "priority": 0,
+      "status": "todo",
+      "id": "1b72"
+    },
+    {
+      "id": "86f8",
+      "name": "a",
+      "priority": 0,
+      "status": "todo"
+    },
+    {
+      "id": "c409",
+      "name": "a",
+      "priority": 0,
+      "status": "todo"
+    }
+  ]
+}

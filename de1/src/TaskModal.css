@@ -1,0 +1,123 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it is on top of other elements */
+}
+
+.modal {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10000; /* Ensure it is on top of the overlay */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-close-button {
+    background: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.priority-buttons {
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.priority-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.priority-button.high {
+    background-color: red;
+    color: white;
+}
+
+.priority-button.medium {
+    background-color: orange;
+    color: white;
+}
+
+.priority-button.low {
+    background-color: green;
+    color: white;
+}
+
+/* status buttons */
+
+.status-buttons {
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.status-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-button.todo {
+    background-color: red;
+    color: white;
+}
+
+.status-button.inprogress {
+    background-color: orange;
+    color: white;
+}
+
+.status-button.done {
+    background-color: green;
+    color: white;
+}
+
+.add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.add-button-enabled {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #713FFF;
+    cursor: pointer;
+}
+
+.status-priority {
+    margin-top: 20px;
+}
+
+.text-notify {
+    color: gray;
+}

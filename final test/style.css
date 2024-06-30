@@ -1,0 +1,32 @@
+.button1{
+    background-color: red;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    color: white;
+    border: 1px solid red;
+}
+.button2{
+    background-color: green;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border: 1px solid green;
+}
+.button1:hover{
+    background-color: rgb(151, 9, 9);
+}
+.button2:hover{
+    background-color: rgb(3, 74, 3);
+}
+.hint-text{
+    box-sizing: border-box;
+    float: left;
+}
+.right{
+    box-sizing: border-box;
+    float: right;
+}

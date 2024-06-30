@@ -1,0 +1,20 @@
+[
+    {
+        "className": "K64KTPM1",
+        "student": [
+            { "fullName": "Nguyễn Văn A", "studentCode": "123456", "dob": "2002-05-15" },
+            { "fullName": "Nguyễn Văn B", "studentCode": "654321", "dob": "2002-08-22" },
+            { "fullName": "Nguyễn Văn C", "studentCode": "987654", "dob": "2002-05-15" },
+            { "fullName": "Nguyễn Văn D", "studentCode": "456789", "dob": "2002-08-22" }
+        ]
+    },
+    {
+        "className": "K64KTPM2",
+        "student": [
+            { "fullName": "Nguyễn Văn E", "studentCode": "012345", "dob": "2002-05-15" },
+            { "fullName": "Nguyễn Văn G", "studentCode": "543210", "dob": "2002-03-05" },
+            { "fullName": "Nguyễn Văn H", "studentCode": "891011", "dob": "2002-03-05" },
+            { "fullName": "Nguyễn Văn K", "studentCode": "111098", "dob": "2002-05-15" }
+        ]
+    }
+]

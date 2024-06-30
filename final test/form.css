@@ -1,0 +1,30 @@
+#container{
+    border: 3px solid black;
+    width: 230px;
+}
+#header{
+    display: flex;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    padding-left: 15px;
+}
+#content{
+    padding-left: 20px;
+}
+#content h4{
+    margin-bottom: 5px;
+}
+#content input{
+    margin-bottom: 10px;
+}
+#leg{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    background-color: grey;
+
+}
+#leg button{
+    margin-right: 20px;
+} 

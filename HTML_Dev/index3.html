@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học web chuẩn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .box {
+            border: 3px solid #eee;
+            display: none;
+            height: 100px;
+            margin-top: 5px;
+            padding: 5px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="title1">Title 1</h3>
+    <div class="box" id="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, perferendis quos eaque, expedita nesciunt natus, necessitatibus eius et qui cumque rerum aspernatur facilis rem cupiditate amet voluptate! Dolorum, sint tempore!</div>
+
+    <br>
+
+    <h3 id="title2">Title 02</h3>
+    <div class="box" id="content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste laudantium voluptatem consequuntur nihil eaque asperiores quisquam facere, assumenda veniam, explicabo iure eos obcaecati maxime! Quidem sint exercitationem adipisci optio!</div>
+
+    <br>
+
+    <h3 id="title3">Title 03</h3>
+    <div class="box" id="content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reiciendis! Eaque exercitationem eos voluptates tempora blanditiis nisi maxime! Quis illum sunt dignissimos? Modi impedit veniam aliquid, labore velit commodi quas?</div>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(function() {
+            $("body").ready(function() {
+                $("#title1").click(function() {
+                    $("#content1").show();
+                    $("#content2").hide();
+                    $("#content3").hide();
+                });
+                
+                $("#title2").click(function() {
+                    $("#content2").show();
+                    $("#content1").hide();
+                    $("#content3").hide();
+                });
+
+                $("#title3").click(function() {
+                    $("#content3").show();
+                    $("#content1").hide();
+                    $("#content2").hide();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

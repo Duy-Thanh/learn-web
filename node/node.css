@@ -1,0 +1,9 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+    background-color: #1f236d;
+}
+.container-fluid li{
+    margin-right: 10px;   
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link react -->
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="babel.min.js"></script>
+
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- link css ca nhan -->
+    <link rel="stylesheet" href="style.css">
+    <title>Final Test</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TLU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quản Lý Nhân Viên</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Nhập nội dung tìm kiếm"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container" style="background-color: rgb(67, 93, 125); height: 60px;">
+            <a class="navbar-brand">Quản Lý Nhân Viên</a>
+            <form class="d-flex" role="search">
+                <button class="button1" type="submit">Xóa</button>
+                <button class="button2" type="submit">Thêm Nhân Viên</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"><input type="checkbox" name="" id=""></th>
+                    <th scope="col">Họ và Tên</th>
+                    <th scope="col">Thư Điện Tử</th>
+                    <th scope="col">Địa CHỉ</th>
+                    <th scope="col">Số Điện Thoại</th>
+                    <th scope="col">Hành Động</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>Nguyễn Văn A</td>
+                    <td>nguyenvana@gmail.com</td>
+                    <td>Hà Nội,Việt Nam</td>
+                    <td>0123456789</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>Trần Thị B</td>
+                    <td>tranthib@gmail.com</td>
+                    <td>TP Hồ Chí Minh, Việt Nam</td>
+                    <td>0123456789</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>Trần Thị C</td>
+                    <td>tranthic@gmail.com</td>
+                    <td>Đà Nẵng, Việt Nam</td>
+                    <td>0123456789</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>Trần Thị D</td>
+                    <td>tranthid@gmail.com</td>
+                    <td>Cần Thơ, Việt Nam</td>
+                    <td>0123456789</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
+                    <td>Trần Thị E</td>
+                    <td>trantheb@gmail.com</td>
+                    <td>Hải Phòng, Việt Nam</td>
+                    <td>0123456789</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <div class="hint-text">Hiển Thị <b>5</b> trên<b>25</b> Bản Ghi</div>
+        <div class="right">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- link js cua boostrap -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
