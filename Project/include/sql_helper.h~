@@ -1,0 +1,30 @@
+#pragma once
+
+#define ADD_EXPORTS
+
+#ifdef _WIN32
+	#ifdef ADD_EXPORTS
+		#define ADDAPI __declspec(dllexport)
+	#else
+		#define ADDAPI __declspec(dllimport)
+	#endif
+
+	// Define calling convention in one place, for convenience
+	#define ADDCALL	__cdecl
+#else
+	// Define with no-value on non-Windows OSes
+	#define ADDAPI
+	#define ADDCALL
+#endif
+
+// Make sure functions are exported with C linkage under C++ compiler
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// Define our function here!
+ADDAPI int ADDCALL Add(int a, int b);
+
+#ifdef _cplusplus
+} // __cplusplus defined
+#endif

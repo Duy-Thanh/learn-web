@@ -1,0 +1,79 @@
+#include <project.h>
+
+int ADDCALL init() {
+	sql_struct_ptr = (PSQL_STRUCTURE)malloc(sizeof(SQL_STRUCTURE));
+
+	if (sql_struct_ptr == NULL) {
+		printf("[DLL_CORE] Failed to allocate necessary memory for required structure!\n");
+		exit(1);
+
+		return 0xFFFF;
+	} else {
+		return 0;
+	}
+}
+
+int ADDCALL close() {
+	if (sql_struct_ptr == NULL) {
+		return 0xFFFF;
+	} else {
+		sqlite3_free(sql_struct_ptr->DB);
+		free(sql_struct_ptr);
+
+		return 0;
+	}
+}
+
+int ADDCALL SQL_OpenDB(const char* filename) {
+	// Verify if sql_struct_ptr not NULL or free accidentally by system
+	if (sql_struct_ptr == NULL) {
+		init();
+	} else {
+		int exitCode;
+		exitCode = sqlite3_open(filename, &sql_struct_ptr->DB);
+
+		if (exit) {
+			printf("Error opening DB %s because error %s\n", filename, sqlite3_errmsg(sql_struct_ptr->DB));
+			return -1;
+		} else {
+			return 0;
+		}
+	}
+}
+
+int ADDCALL SQL_CloseDB() {
+	if (sql_struct_ptr == NULL) {
+		printf("Cannot locate necessary structure!\n");
+		return 0xFFFF;
+	} else {
+		sqlite3_close(sql_struct_ptr->DB);
+	}
+}
+
+int ADDCALL SQL_Exec(const char* query) {
+	if (sql_struct_ptr == NULL) {
+		printf("Cannot find structure!\n");
+		exit(0xFFFF);
+
+		return 0xFFFF;
+	} else {
+		int exitCode;
+		char *msg;
+		exitCode = sqlite3_exec(sql_struct_ptr->DB, query, NULL, 0, &msg);
+
+		if (exit != SQLITE_OK) {
+			printf("Error exec query: %s because error %s\n", query, msg);
+			sqlite3_free(msg);
+		} else {
+			printf("Return: %s\n", msg);
+		}
+
+		SQL_CloseDB(sql_struct_ptr->DB);
+
+		return 0;
+	}
+}
+
+int ADDCALL Add(int a, int b) {
+	return (int)(a + b);
+}

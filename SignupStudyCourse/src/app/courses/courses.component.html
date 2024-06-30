@@ -1,0 +1,84 @@
+<div class="course-page">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom pt-2" style="top: 0;">
+        <div class="container">
+           <button class="nav-link d-inline d-flex" 
+              style="color: white; margin-top: 0.8px; font-size: 22px; margin-right: 10px;" 
+              (click)="backClicked()">
+               <i class="fa-solid fa-arrow-left"></i>
+        </button>
+          <button class="navbar-toggler" 
+                  type="button" 
+                  data-toggle="collapse" 
+                  data-target="#navbarNav" 
+                  aria-controls="navbarNav" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto d-flex">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/support">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex" style="align-items: flex-end;">
+            <ul class="navbar-nav ml-auto">
+              <li>
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+
+       <div class="hero-section">
+        <div class="container">
+            <p class="d-flex col-md-4">
+                <button class="nav-link d-inline" (click)="backClicked()">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button> 
+            </p>
+            <hr>
+          <h1>Courses</h1>
+          <p class="mt-4">Explore our carefully curated library of high-quality courses</p>
+        </div>
+       </div>
+       
+       <div class="services bg-dark" style="color: white;">
+         <div class="container mt-2" id="homepage">
+            <div class="row">
+              <div class="col-md-4" *ngFor="let course of courses">
+                <div class="card mb-4 shadow-sm">
+                  <img class="card-img-top" [src]="course.image" alt="{{ course.title }}">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ course.title }}</h5>
+                    <p class="card-text">{{ course.description }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <button class="btn btn-sm btn-outline-secondary" (click)="enroll(course.id)">Enroll</button>
+                      <small class="text-muted">{{ course.duration }}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" routerLink="/courses">Show All Courses</button>
+         </div>
+       <div class="mt-4 mb-0 d-flex justify-content-center">
+        <p>Copyright &copy; 2016 - 2024 CyberDay Studios. All right reserved.</p>
+       </div>
+       </div>
+  </div>
+  

@@ -1,0 +1,11 @@
+﻿  pch.cpp
+  dllmain.cpp
+  WinHttpWrapper.cpp
+D:\Project\datahelper\WinHttpWrapper.cpp(38,9): warning C4101: 'dwSupportedSchemes': unreferenced local variable
+  WinVersion.cpp
+     Creating library D:\Project\datahelper\x64\Release\datahelper.lib and object D:\Project\datahelper\x64\Release\datahelper.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 215 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  datahelper.vcxproj -> D:\Project\datahelper\x64\Release\datahelper.dll

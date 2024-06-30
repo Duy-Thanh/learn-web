@@ -1,0 +1,5 @@
+D:\Project\gui\LogisticsManagement\LogisticsManagement\bin\Release\LogisticsManagement.exe
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Release\LogisticsManagement.csprojAssemblyReference.cache
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Release\LogisticsManagement.csproj.CoreCompileInputs.cache
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Release\LogisticsManagement.exe
+D:\Project\gui\LogisticsManagement\LogisticsManagement\bin\Release\x86\LogisticsManagement.exe

@@ -1,0 +1,9 @@
+D:\Project\TLUAccountScanner\TLUAccountScanner\bin\Debug\TLUAccountScanner.exe.config
+D:\Project\TLUAccountScanner\TLUAccountScanner\bin\Debug\TLUAccountScanner.exe
+D:\Project\TLUAccountScanner\TLUAccountScanner\bin\Debug\TLUAccountScanner.pdb
+D:\Project\TLUAccountScanner\TLUAccountScanner\obj\Debug\TLUAccountScanner.csproj.AssemblyReference.cache
+D:\Project\TLUAccountScanner\TLUAccountScanner\obj\Debug\TLUAccountScanner.Properties.Resources.resources
+D:\Project\TLUAccountScanner\TLUAccountScanner\obj\Debug\TLUAccountScanner.csproj.GenerateResource.cache
+D:\Project\TLUAccountScanner\TLUAccountScanner\obj\Debug\TLUAccountScanner.csproj.CoreCompileInputs.cache
+D:\Project\TLUAccountScanner\TLUAccountScanner\obj\Debug\TLUAccountScanner.exe
+D:\Project\TLUAccountScanner\TLUAccountScanner\obj\Debug\TLUAccountScanner.pdb

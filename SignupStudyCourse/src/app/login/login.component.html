@@ -1,0 +1,63 @@
+<div [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div>
+  
+<!-- Condition to show this <div> -->
+<div id="loginPage" *ngIf="structure.showLogin">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom pt-2" style="top: 0;">
+        <div class="container">
+            <button class="nav-link d-inline d-flex" 
+            style="color: white; margin-top: 0.8px; font-size: 22px; margin-right: 10px; width: 28px; background-color: transparent;" 
+            (click)="backClicked()">
+                <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto d-flex">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Feature</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/support">Support</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        </nav>
+
+    <div class="services bg-dark" style="color: white;">
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Welcome to Facebook</h2>
+                <form (ngSubmit)="login()">
+                <div class="form-group">
+                    <label for="email">Email or Phone</label>
+                    <input type="text" id="email" [(ngModel)]="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" [(ngModel)]="password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+                <a href="#">Forgot Password?</a>
+                </form>
+                <hr>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+D:\Project\gui\LogisticsManagement\LogisticsManagement\bin\Debug\LogisticsManagement.exe
+D:\Project\gui\LogisticsManagement\LogisticsManagement\bin\Debug\LogisticsManagement.pdb
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Debug\LogisticsManagement.csprojAssemblyReference.cache
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Debug\LogisticsManagement.csproj.CoreCompileInputs.cache
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Debug\LogisticsManagement.exe
+D:\Project\gui\LogisticsManagement\LogisticsManagement\obj\x86\Debug\LogisticsManagement.pdb

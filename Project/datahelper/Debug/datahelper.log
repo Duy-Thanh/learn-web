@@ -1,0 +1,4 @@
+﻿  WinHttpWrapper.cpp
+  LINK : D:\Project\datahelper\Debug\datahelper.dll not found or not built by the last incremental link; performing full link
+     Creating library D:\Project\datahelper\Debug\datahelper.lib and object D:\Project\datahelper\Debug\datahelper.exp
+  datahelper.vcxproj -> D:\Project\datahelper\Debug\datahelper.dll

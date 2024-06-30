@@ -1,0 +1,12 @@
+#navBar {
+    width: 100%;
+    height: 128px;
+}
+
+#todoTitle {
+    width: 80%;
+}
+
+#errortxt {
+    margin-left: 5px;
+}
